@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/formulario.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Formulario</title>
+</head>
+<!--BODY-->
+  <body>
+      <!--HEADER-->
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="https://www.apple.com/co/mac/">Mac</a></li>
+            <li><a href="https://www.apple.com/co/ipad/">iPad</a></li>
+            <li><a href="https://www.apple.com/co/ipad/">iPhone</a></li>
+            <li><a href="https://www.apple.com/co/watch/">Watch</a></li>
+            <li><a href="https://www.apple.com/co/airpods/">AirPods</a></li>
+            <li><a href="https://www.apple.com/co/tv-home/">Tv y Casa</a></li>
+            <li><a href="https://www.apple.com/co/services/">Entretenimiento</a></li>
+            <li><a href="https://support.apple.com/es-co?cid=gn-ols-home-hp-tab">soporte</a></li>
+            <li><a href="https://locate.apple.com/in/en/">Dónde comprar</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
+  <!--MAIN-->
+    <main>
+
+        <div class="contact_form">
+      
+          <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve nos pondremos en contacto contigo.</h3>
+        
+            <form action="submeter-formulario.php" method="post" class="container">
+        
+            <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre" class="form-control">
+            </p>
+        
+            <p>
+            <label for="email" class="colocar_email">Email
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email"class="form-control">
+            </p>
+        
+            <p>
+            <label for="telefone" class="colocar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" class="form-control">
+            </p>
+        
+            <p>
+            <label for="website" class="colocar_website">Sitio web
+            </label>
+            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web" class="form-control">
+            </p>
+        
+            <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+            <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto" class="form-control">
+            </p>
+        
+            <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+            <span class="obligatorio">*</span>
+            </label>                     
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+            </p>  
+        
+            <button type="submit" name="enviar_formulario" id="enviar" class="btn btn-primary"><p>Enviar</p></button>
+        
+            <p class="aviso">
+            <span class="obligatorio"> * </span>Los campos son obligatorios.
+            </p>
+        
+            </form>
+          </div>
+      </div>
+      
+    </main>
+      <!--FOOTER-->
+          <footer>
+            <section class="foot">
+                <ul>
+                    <li>Apple Fitness+ requiere un iPhone 8 o posterior, o un Apple Watch Series 3 o posterior enlazado con un iPhone 6s o posterior. Sólo para nuevas suscripciones. $19.900 al mes al finalizar el periodo de prueba gratis. El plan se renovará automáticamente hasta que se cancele. Sujeto a <a href="#">términos</a>.</li>
+                    <li>Apple Fitness+ requiere suscripción.</li>
+                    <li>Apple Fitness+ requiere un iPhone 8 o posterior con iOS 16.1 o posterior, o un Apple Watch Series 3 o posterior con watchOS 7.2 o posterior enlazado con un iPhone 6s o posterior con iOS 14.3 o posterior.</li>
+                    <li>La app Fitness del Apple TV requiere tvOS 14.3 o posterior.</li>
+                    <li>La app Fitness del iPad requiere iPadOS 14.3 o posterior.</li>
+                    <li>Para disfrutar las funcionalidades más recientes, tus dispositivos deben tener la última versión del software.</li>
+                    <li>Las clases de Apple Fitness+ están disponibles en inglés con subtítulos opcionales en francés, español, alemán, italiano, ruso y portugués de Brasil.</li>
+                    <li>Apple TV+ requiere suscripción. Sujeto a restricciones y otros <a href="#">términos</a>.</li>
+                </ul>
+            </section>
+
+            <hr style="width:100%;">
+
+            <section class="footer1">
+                <article class="foot2">
+                    <ul class="descubrir">
+                        <h5>Descubrir</h5>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">TV y Casa</a></li>
+                        <li><a href="#">AirTag</a></li>
+                    </ul>
+                </article>
+        
+                <article class="foot2">
+                    <ul class="entretenimiento">
+                        <h5>Entretenimiento</h5>
+                        <li><a href="#">Apple One</a></li>
+                        <li><a href="#">Apple TV+</a></li>
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">Apple Arcade</a></li>
+                        <li><a href="#">Apple Fitness+</a></li>
+                        <li><a href="#">Apple Podcast</a></li>
+                        <li><a href="#">Apple Books</a></li>
+                        <li><a href="#">App Store</a></li>
+                    </ul>
+                </article>
+        
+                <article class="foot2">
+                    <ul class="acercadeapple">
+                        <h5>A cerca de Apple</h5>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Directivos de Apple</a></li>
+                        <li><a href="#">Oportunidades laborales</a></li>
+                        <li><a href="#">Inversionistas</a></li>
+                        <li><a href="#">ética y cumplimiento de políticas</a></li>
+                        <li><a href="#">Eventos</a></li>
+                    </ul>
+                </article>
+            </section>
+            
+            <hr style="width:100%;">
+
+            <section class="foot3">
+                <ul>
+                    <li>Copyright © 2023 Apple Inc. Todos los derechos reservados.</li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Mapa del sitio</a></li>  
+                </ul>
+            </section>        
+        </footer>
+      
+  </body>
+</html>

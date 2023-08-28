@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    text-align: center;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #fff;
+ }
+
+a{
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+/*NAV BAR*/
+
+nav {
+  background: #161617cc;
+  width: 100%; 
+  line-height: 50px;
+}
+nav ul{
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  padding: 5px;
+}
+.checkbtn{
+  color: white;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin-right: 10px;
+}
+#check{
+  display: none;
+}
+nav ul li a:hover{
+  background-color: #1d1d1f;
+  border-radius: 30px;
+}
+
+@media (max-width: 900px){
+  nav{
+    height: 45px;
+    position: fixed;
+    top: 0;
+  }
+  .checkbtn{
+    display: inline-block;
+  }
+  nav ul{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #161617cc;
+    left: -100%;
+    transition: all .5s;
+    overflow: auto;
+    text-align: left;
+  }
+  nav ul li{
+    display: block;
+    padding-left: 40px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    }
+  }
+
+/*MAIN*/
+
+.txt{
+  padding-top: 35px;
+  letter-spacing: .009em;
+  font-size: 30px;
+}
+
+.txt a{
+    color: #06c;
+    font-size: 19px;
+}
+
+main article{
+  padding-top: 24px;
+  width: 100%;
+  height: 650px;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 830px) {
+  .txt { 
+     font-size: 20px;
+  }
+  main article{
+    height: 550px;
+  }
+}
+
+.iphone_14{
+    background-image: url("../img/iphone14.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #1d1d1f;
+}
+@media only screen and (max-width: 830px) {
+    .iphone_14 { 
+       background-image: url("../img/iphone14_small.jpg");
+    }
+  }
+
+.iphone_14_pro{
+    background-image: url("../img/iphone14pro_.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+@media only screen and (max-width: 830px) {
+    .iphone_14_pro { 
+       background-image: url("../img/iphone14pro_small.jpg"); 
+    }
+  }
+
+.mac_book{
+    background-image: url("../img/macbook.jpg");
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 830px) {
+    .mac_book { 
+       background-image: url("../img/macbook_small.jpg"); 
+    }
+  }
+
+  /*GRUPOS*/
+
+  .grupo1 {
+    display: flex;
+    justify-content: center;
+  }
+  .grupo1 > .watch{
+    width: 100%;
+    margin: 0px 4px 4px 8px;
+  }
+  .grupo1 > .ipad{
+    width: 100%;
+    margin: 0px 8px 4px 4px;
+  }
+
+
+  @media only screen and (max-width: 830px) {
+    .grupo1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 850px;
+    }
+    .grupo1 > .watch{
+      width: 100%;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    .grupo1 > .ipad{
+      width: 100%;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .grupo2 {
+    display: flex;
+    justify-content: center;
+  }
+  .grupo2 > .studio{
+    width: 100%;
+    margin: 4px 4px 8px 8px;
+  }
+  .grupo2 > .pro{
+    width: 100%;
+    margin: 4px 8px 8px 4px;
+  }
+
+  @media (max-width: 830px) {
+    .grupo2 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 850px;
+    }
+    .grupo2 > .studio{
+      width: 100%;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    .grupo2 > .pro{
+      width: 100%;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+.watch{
+    background-image: url("../img/watch.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+@media only screen and (max-width: 830px) {
+    .watch { 
+       background-image: url("../img/watch_small.jpg"); 
+    }
+  }
+.watch span{ 
+    color: red;
+    font-size: 15px;
+
+}
+
+.ipad{
+    background-image: url("../img/ipadpro.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+@media only screen and (max-width: 830px) {
+    .ipad { 
+       background-image: url("../img/ipadpro_small.jpg"); 
+    }
+  }
+.studio{
+    background-image: url("../img/studio.jpg");
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 830px) {
+    .studio { 
+       background-image: url("../img/studio_small.jpg"); 
+    }
+  }
+
+.pro{
+    background-image: url("../img/pro.jpg");
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 830px) {
+    .pro { 
+       background-image: url("../img/pro_small.jpg"); 
+    }
+  }
+
+/*swiper*/
+
+.mySwiper {
+  width: 100%;
+  margin: 5px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img{
+  width: 100%;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #f5f5f7; 
+    color: #6e6e73; 
+    padding-left: 5px; 
+    padding: 15px;
+}
+footer h5{
+    color: #1d1d1f;
+    font-size: 12px;
+}
+
+footer a{
+    color: #6e6e73; 
+    font-size: 12px;
+}
+footer .foot ul li a{
+    color: #1d1d1f;
+    text-decoration-line: underline;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer ul li{
+    padding: 5px;
+}
+
+.foot2{
+        float: left;
+        width: 33.33%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.foot3 li{
+    display: inline-block;
+    padding-top: 15px;
+}
+footer h6{
+  font-size: 12px;
+}
+
+/*ANIME.JS*/
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.particule {
+  position: fixed;
+}
